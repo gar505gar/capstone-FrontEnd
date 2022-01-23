@@ -12,7 +12,7 @@ export default class MyProfile extends Component {
     }
     componentDidMount() {
         let email = localStorage.getItem('email');
-        axios.get(`api/User/getuserbyemail/${email}`).then(response => {
+        axios.get(`https://realestateplus.herokuapp.com/api/User/getuserbyemail/${email}`).then(response => {
             
             this.setState({ user: response.data });
         });
@@ -22,7 +22,7 @@ export default class MyProfile extends Component {
     }
     deleteUser(id) {
         localStorage.removeItem('email')
-        axios.delete(`api/User/delete/${id}`)
+        axios.delete(`https://realestateplus.herokuapp.com/api/User/delete/${id}`)
             .then(res => {
                 window.location.reload();
             })

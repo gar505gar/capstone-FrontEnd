@@ -42,7 +42,7 @@ export default class MyRealestates extends Component {
     
     deleteSpecialist(id) {
         //console.log("inside deleteHandler")
-        axios.delete(`/realestate/delete/${id}`)
+        axios.delete(`https://realestateplus.herokuapp.com/realestate/delete/${id}`)
             .then(res => {
                 const RelList = this.state.RelList.filter(item => item.id !== id);
                 this.setState({ RelList });

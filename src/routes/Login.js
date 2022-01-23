@@ -19,7 +19,7 @@ export default function Login() {
         //Send Api request to validate data and get token
         axios({
             method: 'post',
-            url: 'api/User/login',
+            url: 'https://realestateplus.herokuapp.com/api/User/login',
             data: user
         }).then((response)=>{alert(response.data)
             if(response.data == " Authenticated"){

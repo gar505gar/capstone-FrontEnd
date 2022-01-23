@@ -67,7 +67,7 @@ let nuwRealestate = {
 }
 console.log(nuwRealestate)
 useEffect(()=>{
-  axios.get("api/User")
+  axios.get("https://realestateplus.herokuapp.com/api/User")
    .then(response=>{
      console.log(response.data)
      setMyUser(response.data[0])
@@ -79,7 +79,7 @@ function handleClick(event){
   console.log("add func")
  axios({
    method:'post',
-   url:'/realestate/addn',
+   url:'https://realestateplus.herokuapp.com/realestate/addn',
    data:nuwRealestate
  });
 }
@@ -88,7 +88,7 @@ useEffect(()=>{
   setEmail(localStorage.getItem('email'))
   
         
-             axios.get(`api/User/getuserbyemail/${email}`)
+             axios.get(`https://realestateplus.herokuapp.com/api/User/getuserbyemail/${email}`)
               .then(response=>{
                 setUser(response.data) 
                 console.log("user", user)

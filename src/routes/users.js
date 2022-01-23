@@ -64,7 +64,7 @@ export default function Users() {
     console.log("add func")
     axios({
       method: 'post',
-      url: '/api/User/add',
+      url: 'https://realestateplus.herokuapp.com/api/User/add',
       data: nuwUser
     });
   }

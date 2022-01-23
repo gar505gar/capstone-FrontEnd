@@ -29,7 +29,7 @@ let AddnewMediator = {
     e.preventDefault();
     axios({
     method:'post',
-    url:'api/mediator/add',
+    url:'https://realestateplus.herokuapp.com/api/mediator/add',
     data: AddnewMediator,
     });
     }

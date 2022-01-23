@@ -9,7 +9,7 @@ import axios from 'axios'
 export default function App() {
   axios({
     method:'post',
-    url:'/realestate/addn',      //اضافه الصور
+    url:'https://realestateplus.herokuapp.com/realestate/addn',      //اضافه الصور
     data:{
         id:1,
        location:"الموقع :سكاكا" ,
@@ -23,7 +23,7 @@ export default function App() {
 
 axios({
   method:'post',
-  url:'/realestate/addn',      //اضافه الصور
+  url:'https://realestateplus.herokuapp.com/realestate/addn',      //اضافه الصور
   data:{
       id:2,
      location:" الموقع :جده",
@@ -34,7 +34,7 @@ axios({
 })
 axios({
   method:"post",
-  url:"/realestate/addn",      //اضافه الصور
+  url:"https://realestateplus.herokuapp.com/realestate/addn",      //اضافه الصور
   data:{
       id:3,
      location:" الموقع :حائل",
@@ -46,7 +46,7 @@ axios({
 
 axios({
   method:"post",
-  url:"/realestate/addn",      //اضافه الصور
+  url:"https://realestateplus.herokuapp.com/realestate/addn",      //اضافه الصور
   data:{
       id:4,
      location:" الموقع :ابها",
@@ -59,7 +59,7 @@ axios({
 
 axios({
   method:"post",
-  url:"/realestate/addn",      //اضافه الصور
+  url:"https://realestateplus.herokuapp.com/realestate/addn",      //اضافه الصور
   data:{
       id:5,
      location:" الموقع: تبوك",
@@ -75,7 +75,7 @@ axios({
 
 axios({
   method:"post",
-  url:"/realestate/addn",      //اضافه الصور
+  url:"https://realestateplus.herokuapp.com/realestate/addn",      //اضافه الصور
   data:{
       id:6,
      location:" الموقع: الرياض",

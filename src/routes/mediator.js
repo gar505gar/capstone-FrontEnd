@@ -39,7 +39,7 @@ mobile:mobile
   console.log("nuwmediator",nuwmediator)
  axios({
    method:'post',
-   url:'/api/mediator/add',
+   url:'https://realestateplus.herokuapp.com/api/mediator/add',
    data:nuwmediator
  });
 }
@@ -47,7 +47,7 @@ mobile:mobile
 
   // //fun Display admin name
   useEffect(()=>{
-    axios.get("/api/mediator")
+    axios.get("https://realestateplus.herokuapp.com/api/mediator")
     .then(result=>setData(result.data));
     console.log(data);
     },[]);
