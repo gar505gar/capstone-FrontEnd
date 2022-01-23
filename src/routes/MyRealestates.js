@@ -12,7 +12,7 @@ export default class MyRealestates extends Component {
     }
     componentDidMount() {
         let email = localStorage.getItem('email');
-        if(email){  axios.get(`/realestate/getRealestateByUseremail/${email}`).then(response => {
+        if(email){  axios.get(`https://realestateplus.herokuapp.com/realestate/getRealestateByUseremail/${email}`).then(response => {
             const RelList = response.data
             this.setState({ RelList });
         });}

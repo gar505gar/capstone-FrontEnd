@@ -15,7 +15,7 @@ this.state={
 }
 
 componentDidMount(){
-  axios.get("realestate")
+  axios.get("https://realestateplus.herokuapp.com/realestate")
   .then(response=>{
 const hom=response.data
 this.setState({hom})
